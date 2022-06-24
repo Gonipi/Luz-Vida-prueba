@@ -250,9 +250,9 @@ a{
     }
 }
 
-.menu li:hover{
-    transform: scale(1.5);
-}
 .menu li{
     transition: all 0.8s;
+}
+.menu li:hover{
+    transform: scale(1.5);
 }
