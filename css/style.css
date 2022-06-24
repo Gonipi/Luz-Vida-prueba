@@ -249,3 +249,7 @@ a{
         margin-top: 15px;
     }
 }
+
+.menu li:hover{
+    transform: scale(2);
+}
