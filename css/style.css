@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* font-family: 'Montserrat', sans-serif; */
+
+/* verde oscuro #b11a06
+verde claro #bab10e
+crudo #fbf4cd
+naranjita #f18238 */
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+.cabecera{
+    width: 100%;
+    height: 28vh;
+    background-color: #eeece8;
+    text-align: center;
+    padding-top: 15px;
+    position: sticky;
+    top: 0;
+}
+
+.menu{
+    width: 60%;
+    margin: auto;
+    padding-top: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.menu a{
+   color: black;
+}
+
+.slider img{
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+
+.nosotras{
+    width: 90%;
+    margin: auto;
+    padding-top: 40px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 500px;
+    column-gap: 40px;
+    flex-wrap: wrap;
+}
+
+.nosotras-texto{
+    text-align: right;
+    align-self: center;
+}
+
+.nosotras-texto h1{
+    padding-bottom: 30px;
+    font-size: 40px;
+}
+
+.nosotras img{
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+}
+
+.nosotras h5{
+    text-align: right;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.footer{
+    background-color: #eeece8;
+    height: 100px;
+    text-align: center;
+}
+
+.footer img{
+    width: 30px;
+    padding: 35px 10px 10px 10px;
+}
+
+/* Empieza Servicios */
+
+.titulo-servicios, .titulo-productos, .titulo-contacto{
+    text-align: left;
+    padding: 40px 0px 40px 80px;
+    font-size: 40px;
+}
+
+.video{
+    width: 90%;
+    margin: auto;
+}
+
+.video video{
+    width: 100%;
+}
+
+.servicios{
+    display: grid;
+    width: 90%;
+    margin: auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 700px;
+    padding-top: 40px;
+    gap: 40px;
+}
+
+.servicios img{
+    width: 100%;
+    height: 65%;
+    object-fit: cover;
+}
+
+.servicios h3{
+    padding: 30px 0px;
+}
+
+/* Empieza Productos */
+
+.productos{
+    display: grid;
+    width: 90%;
+    margin: auto;
+    padding-bottom: 40px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.productos img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.productos h3{
+    font-size: 29px;
+}
+
+.bloque-texto, .bloque-texto-2{
+    align-self: center;
+}
+
+.bloque-texto-2{
+    text-align: right;
+}
+
+.productos p{
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+/* Empieza Contacto */
+
+.formulario{
+    display: grid;
+    width: 90%;
+    margin: auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 700px;
+    gap: 40px;
+}
+
+.formulario img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.formulario h3{
+    font-size: 30px;
+}
+
+.formulario p{
+    font-size: 20px;
+    padding: 20px 0px;
+}
+
+.formulario-izquierda{
+    align-self: center;
+}
+
+.formulario form, textarea, button{
+
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.mapa{
+    width: 90%;
+    margin: auto;
+    padding-bottom: 40px;   
+}
+
+.mapa iframe{
+    width: 100%;
+}
+
+.mapa h3{
+    text-align: left;
+    padding: 40px 0px 40px;
+    font-size: 40px;
+}
+
+/*Mobile*/
+
+@media only screen and (max-width: 480px){
+    .navegador{
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        margin: auto;
+    }
+    .menu{
+        width: 80%;
+    }
+    .cabecera{
+        height: 35vh;
+    }
+    .nosotras{
+        display: flex;
+        flex-direction: column;
+    }
+    .nosotras-texto{
+        text-align: left;
+        width: 90%;
+        margin: auto;
+
+    }
+    .nosotras img{
+        margin: 15px auto;
+    }
+    .footer{
+        margin-top: 15px;
+    }
+}
